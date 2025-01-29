@@ -1,0 +1,144 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-1pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large Graham Burleigh} & Email : grahamburleigh6@gmail.com \\
+  linkedin.com/in/gbburleigh & Mobile : +1-773-414-5002 \\
+  gbburleigh.vercel.app & github.com/gbburleigh \\
+\end{tabular*}
+
+\section{Experience}
+  \resumeSubHeadingListStart
+  \resumeSubheading
+      {Stax Payments}{Orlando, FL}
+      {Software Developer - Onboarding/Risk}{Jan 2023 - Pres}
+      \resumeItemListStart
+      \resumeItem{Performance}{Consistently ranked in the top 5\% of developers in department-wide metrics: stories completed, points accounted for, ticket lifecycle time, and commits/PRs}
+      \resumeItem{Dispute Resolution Revamp}{
+      Led fullstack design of a new payment dispute feature, allowing 
+ over 40,000 merchants to directly monitor and manage inconclusive transactions}
+      \resumeItem{Registration Efficiency}{Part of three-developer squad responsible for decreasing merchant application pend rates by more than 30\%}
+      \resumeItem{PayPal Onboarding Rehaul}{Co-led initiative to onboard 8000 merchants onto PayPal via API integration}
+      \resumeItem{Deposit Reporting Accuracy}{Co-led a complete redesign of Stax Pay's deposit report feature that made up ~25\% of all traffic on the site}
+      \resumeItem{Fraud Detection \& Mitigation}{Implemented over 30 Datadog monitors to proactively identify suspicious activity and prevent fraud}
+      \resumeItem{On-Call Service}{Provided all-week round-the-clock support for incoming customer support requests, bug reports, and performance degradation}
+      
+      \resumeItemListEnd
+  \resumeSubheading
+      {CardX}{Chicago, IL}
+      {Software Developer}{Jun 2022 - Jan 2023}
+      \resumeItemListStart
+      \resumeItem{Payments Infrastructure}{Developed and implemented critical AWS infrastructure (Lambda \& S3) to support various payment functionalities and platforms}
+      \resumeItem{Third-Party Integrations}{Designed and integrated third-party payment solutions like Mastercard's Click to Pay, onto which we onboarded more than 1000 merchants}
+      \resumeItem{Scalable Recurring Billing}{Optimized the recurring billing system for high scalability, ensuring efficient processing of thousands of daily transactions}
+      \resumeItem{Exceptional Customer Support}{Resolved over 100 client tickets within a year as an operations specialist, effectively troubleshooting and resolving bugs on the spot}
+      \resumeItem{DevOps and CICD}{Handled all aspects of ticket lifecycles from testing to deployment, making more than 150 unique releases across all of our repositories}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\section{Research and Publications}
+  \resumeSubHeadingListStart
+  \resumeSubItem{quite-suite}{Library of useful packages, scripts, and workflows for fullstack development and Fintech research}
+  \resumeSubHeadingListStart
+  \resumeSubItem{quick-card-tokenizer}{Mock Golang environment for tokenizing payment methods and storing them securely}
+  \resumeSubItem{quick-pans}{Reverse brute-force the Luhn algorithm to generate random valid PANs}
+  \resumeSubItem{quick-logger}{Telemetry library in Golang focused on quick scaffolding for logging}
+  \resumeSubItem{quick-gateway}{Mock payment gateway written in Golang featuring a terminal client - gateway - processor architecture}
+  \resumeSubItem{quick-tools}{Useful scripts I use regularly, such as quickly creating Golang and Vite projects}
+  \resumeSubHeadingListEnd
+    \resumeSubItem{ACM AsiaCCS 2024}{Decoding the MITRE Engenuity ATT\&CK Enterprise Evaluation: An Analysis of EDR Performance in Real-World Environments}
+  % \resumeSubItem{ScrapeLib}
+  %     {Open source Python library for scraping forum posts from freelancing sites and monitoring for censorship.}
+  % \resumeSubItem{MITREeval}
+  %     {Open source Python library for fetching and interpreting MITRE evaluation results to rank vendors and threat techniques in terms of effectiveness and efficiency.}
+  \resumeSubHeadingListEnd
+
+\section{Programming Skills}
+ \resumeSubHeadingListStart
+    \item{
+        \textbf{Languages}{: Typescript, Javascript, Python, Bash}
+        \vspace{-2pt}
+    }
+    \item{
+        \textbf{Web Frameworks}{: React.js, Vue.js}
+        \vspace{-2pt}
+    }
+    \item{
+        \textbf{Backend Stacks}{: Express.js, SQL, Knex.js}
+        \vspace{-2pt}
+    }
+    \item{
+        \textbf{DevOps}{: AWS CDK (Lambda, S3, SQS, IAM) Auth0, Docker, Datadog}
+        \vspace{-2pt}
+     }
+    \item{
+        \textbf{Environments and Testing}{: Node.js, Jest, Cypress, Conda}
+        \vspace{-2pt}
+    }
+ \resumeSubHeadingListEnd
+
+ \section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Northwestern University}{Evanston, IL}
+      {Bachelor of Science, Computer Science }{Sep. 2018 - Jun. 2022}
+  \resumeSubHeadingListEnd
+
+\end{document}
